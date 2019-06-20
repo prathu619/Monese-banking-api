@@ -12,23 +12,21 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"fromAccount\" : \"A315431\",\n\t\"toAccount\" : \"A054889\",\n\t\"transferAmount\" : -1\n}"
+					"raw": "{\n\t\"sourceAccount\" : \"123456\",\n\t\"targetAccount\" : \"987654\",\n\t\"transferAmount\" : -1\n}"
 				},
 				"url": {
-					"raw": "localhost:8080/transfer",
+					"raw": "localhost:8080/transact",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"transfer"
+						"transact"
 					]
 				}
 			},
@@ -41,23 +39,21 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"fromAccount\" : \" \",\n\t\"toAccount\" : \"A054889\",\n\t\"transferAmount\" : 200\n}"
+					"raw": "{\n\t\"sourceAccount\" : \" \",\n\t\"targetAccount\" : \"987654\",\n\t\"transferAmount\" : 500\n}"
 				},
 				"url": {
-					"raw": "localhost:8080/transfer",
+					"raw": "localhost:8080/transact",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"transfer"
+						"transact"
 					]
 				}
 			},
@@ -70,9 +66,7 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"value": "application/json"
 					}
 				],
 				"body": {
@@ -80,14 +74,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:8080/accountStatement/test",
+					"raw": "localhost:8080/accountStatement/45464",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"accountStatement",
-						"test"
+						"45464"
 					]
 				}
 			},
@@ -127,23 +121,21 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"fromAccount\" : \"A315431\",\n\t\"toAccount\" : \"\",\n\t\"transferAmount\" : 200\n}"
+					"raw": "{\n\t\"sourceAccount\" : \"123456\",\n\t\"targetAccount\" : \"\",\n\t\"transferAmount\" : 500\n}"
 				},
 				"url": {
-					"raw": "localhost:8080/transfer",
+					"raw": "localhost:8080/transact",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"transfer"
+						"transact"
 					]
 				}
 			},
@@ -156,9 +148,7 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"value": "application/json"
 					}
 				],
 				"body": {
@@ -166,14 +156,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:8080/accountStatement/A315431",
+					"raw": "localhost:8080/accountStatement/123456",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"accountStatement",
-						"A315431"
+						"123456"
 					]
 				}
 			},

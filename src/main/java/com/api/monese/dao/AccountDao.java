@@ -1,4 +1,4 @@
-package com.api.monese.service;
+package com.api.monese.dao;
 
 import com.api.monese.dao.entities.Account;
 import com.api.monese.dao.repository.AccountsRepository;

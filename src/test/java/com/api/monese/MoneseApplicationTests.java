@@ -7,7 +7,7 @@ import com.api.monese.model.ErrorResponse
 		;
 import com.api.monese.model.SuccessResponse;
 import com.api.monese.model.TransactionRequest;
-import com.api.monese.service.AccountDao;
+import com.api.monese.dao.AccountDao;
 import com.api.monese.util.Constants;
 import org.junit.Before;
 import org.junit.Test;

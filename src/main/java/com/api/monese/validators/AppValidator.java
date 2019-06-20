@@ -3,7 +3,7 @@ package com.api.monese.validators;
 import com.api.monese.dao.entities.Account;
 import com.api.monese.model.Errors;
 import com.api.monese.model.TransactionRequest;
-import com.api.monese.service.AccountDao;
+import com.api.monese.dao.AccountDao;
 import com.api.monese.util.ApplicationException;
 import com.api.monese.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
