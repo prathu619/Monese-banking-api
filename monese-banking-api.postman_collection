@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "82ab58d0-1763-4de2-ab2d-9dcb85737fea",
+		"name": "Banking Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Money Transfer - Invalid amount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromAccount\" : \"A315431\",\n\t\"toAccount\" : \"A054889\",\n\t\"transferAmount\" : -1\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/transfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Money Transfer - Invalid Source Account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromAccount\" : \" \",\n\t\"toAccount\" : \"A054889\",\n\t\"transferAmount\" : 200\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/transfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account Statement- FAILURE",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/accountStatement/test",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accountStatement",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Money Transfer - SUCCESS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sourceAccount\" : \"123456\",\n\t\"targetAccount\" : \"987654\",\n\t\"transferAmount\" : 500\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/transact",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Money Transfer - Invalid Target Account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fromAccount\" : \"A315431\",\n\t\"toAccount\" : \"\",\n\t\"transferAmount\" : 200\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/transfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account Statement - SUCCESS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/accountStatement/A315431",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accountStatement",
+						"A315431"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
