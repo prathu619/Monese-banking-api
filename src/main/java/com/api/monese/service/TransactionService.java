@@ -9,7 +9,7 @@ import com.api.monese.util.ApplicationException;
 public interface TransactionService {
 
 
-    public SuccessResponse doTransfer(TransactionRequest transactionRequest) throws ApplicationException;
+    SuccessResponse doTransfer(TransactionRequest transactionRequest) throws ApplicationException;
 
-    public void saveTransaction(Transaction transaction) ;
+    void saveTransaction(Transaction transaction) ;
 }
