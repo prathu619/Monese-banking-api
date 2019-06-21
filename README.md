@@ -8,7 +8,7 @@ A sample banking API which can be used for the below use cases:
 # Methods
 
 * Exposes below HTTP ENDPOINTS:
-  - PUT - Sending money between accounts
+  - POST - Sending money between accounts
   - GET - Fetch account statement with account balance and list of transactions
 
 # LOCAL SETUP
