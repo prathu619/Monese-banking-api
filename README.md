@@ -40,7 +40,7 @@ mvn clean package
 
 * On a successful build execute the below command in terminal:
 ```
-
+java -jar target/monese-banking-api-0.0.1-SNAPSHOT.jar
 
 ```
 
