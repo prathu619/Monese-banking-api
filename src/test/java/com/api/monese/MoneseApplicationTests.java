@@ -86,7 +86,7 @@ public class MoneseApplicationTests {
 	}
 
 	@Test
-	public void willTest_TransferEndpoint() {
+	public void willTestMoneyTransfer() {
 		//given
 		String sourceAccount = "123456";
 		String targetAccount = "987654";
