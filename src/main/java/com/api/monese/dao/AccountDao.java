@@ -2,14 +2,14 @@ package com.api.monese.dao;
 
 import com.api.monese.dao.entities.Account;
 import com.api.monese.dao.repository.AccountsRepository;
-import com.api.monese.util.Constants;
 import com.api.monese.util.ApplicationException;
+import com.api.monese.util.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
 import java.text.MessageFormat;
 
-@Service
+@Repository
 public class AccountDao {
 
     @Autowired
